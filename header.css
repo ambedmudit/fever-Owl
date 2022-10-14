@@ -1,0 +1,452 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 600px;
+    /* background-color: black; */
+    scroll-behavior: smooth;
+}
+.header{
+    background-color: #131313;
+    padding: 20px 70px 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.color{background-color: #131313;}
+.color a{
+    font-family: 'Major Mono Display', monospace;
+    font-size: 25px;
+    text-decoration: none;
+    background-image: linear-gradient(to right,#ff00cc, #333399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    
+}
+.right, .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131313;
+}
+.nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    background-color: #131313;
+    margin-left: 50px;
+    transition: color .25s;
+}
+.nav a:hover{
+    color: #9518fc;
+}
+.nav button{
+    margin-left: 40px;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 2px;
+    border-style: none;
+    background-color: #833ab4;
+    color: white;
+    background-image: linear-gradient(to right, rgb(244, 170, 73), rgb(228, 5, 5), #833ab4);
+    cursor: pointer;
+    transition: background-image .25s;
+}
+.nav button:hover{
+    background-image: linear-gradient(to right,#9114ff, #da22ff 100%);
+}
+.burger{
+display: none;
+position: absolute;
+right: 5%;
+top: 15%;
+
+
+}
+.line{
+    width: 37px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+    border-radius: 20px;
+}
+
+
+/* main content */
+.main{
+    background: black;
+    background: linear-gradient(to right, #161616, #000000);
+    padding: 200px 0;
+    
+}
+.section{
+    color: white;
+    width: 100%;
+    font-size: 36px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 100px;
+
+}
+.section span{
+    background-image: linear-gradient(to right,#c31432, #240b36);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section p{
+    background-image: linear-gradient(to right,#9114ff, #da22ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+}
+
+.section button{
+    padding: 15px 45px;
+    font-weight: lighter;
+    font-size: 27px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(244, 170, 73), rgb(228, 5, 5), #833ab4);
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 300px;
+}
+   .section button:hover{
+    background-image: linear-gradient(to right,#9114ff, #da22ff 100%);
+   }
+  
+   .about-section{
+       background: #131313;
+       font-family: 'Kumbh Sans', sans-serif;
+       padding: 200px 0;
+   }
+   .about{
+       width: 100%;
+       color: rgb(255, 255, 255);
+       
+       text-align: center;
+       /* display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center; */
+   }
+   .about h2{
+    background-image: linear-gradient(to right,#ff2247, #220e31);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       text-transform: uppercase;
+       margin-bottom: 70px;
+       font-weight: 400;
+       font-size: 40px;
+   }
+   .about h1{
+    background-image: linear-gradient(to right,#4e2002, #d400ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    font-style: italic;
+   }
+   .about h3{
+       
+       padding: 30px 70px 40px 70px;
+   }
+
+   .about button{
+       padding: 20px 40px;
+       font-size: 20px;
+       border-radius: 4px;
+       border: none;
+       color: white;
+       background-image: linear-gradient(to right, rgb(244, 170, 73), rgb(228, 5, 5), #833ab4);
+       cursor: pointer;
+       transition: background-color  ;
+    }
+    .about button:hover{
+        background-image: linear-gradient(to right,#9114ff, #da22ff 100%);
+    }
+
+    .service-section{
+        background-color: #131313;
+        font-family: 'Kumbh Sans', sans-serif;
+        padding: 250px 0 0px 0px ;
+    }
+    .service{
+        font-size: 40px;
+        background-image: linear-gradient(to right,#ff2247, #220e31);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .sub-service-section{
+        color: white;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .notes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 150px 75px 75px 75px;
+        background-image: linear-gradient(to right, #8A2387, #E94057, #F27121);
+        border-radius: 4px;
+    }
+    .notes a{
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    .notes button{
+        background-color: black;
+        font-size: 17px;
+        margin-top: 50px;
+        padding:10px 20px ;
+        color: white;
+        border-style: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color .25s;
+    }
+    .notes button:hover{
+        background-color: white;
+        color: black;
+    }
+    .pyq{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 150px 75px 75px 75px;
+        background-image: linear-gradient(to right, #ff0084, #33001b);
+        border-radius: 4px;
+    }
+    .pyq a{
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    .pyq button{
+        background-color: black;
+        font-size: 17px;
+        margin-top: 50px;
+        padding:10px 20px ;
+        color: white;
+        border-style: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color .25s;
+    }
+    .pyq button:hover{
+        background-color: white;
+        color: black;
+    }
+    .syllabus-pattern{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 150px 22px 75px 22px;
+        background-image: linear-gradient(to right, #ff00cc, #333399);
+        border-radius: 4px;
+    }
+    .syllabus-pattern a{
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    .syllabus-pattern button{
+        background-color: black;
+        font-size: 17px;
+        margin-top: 50px;
+        padding:10px 20px ;
+        color: white;
+        border-style: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color .25s;
+    }
+    .syllabus-pattern button:hover{
+        background-color: white;
+        color: black;
+    }
+    .signup-section{
+        background-color: #131313;
+        padding: 280px 0px 0px 0px;
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+    .signup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .signup h2{
+        font-size: 45px;
+        font-weight: 400;
+        background-image: linear-gradient(to right,#8f152a, #521c1c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       margin-bottom: 50px;
+    }
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        column-gap: 70px;
+        margin-top: 150pxw;
+        
+    }
+    .name h1{
+        font-size: 60px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to right,#9114ff, #da22ff 100%);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+    }
+
+    .name h3{
+        font-size: 20px;
+        margin-bottom: 30px;
+     
+    }
+
+    .name button{
+        padding: 15px 45px;
+    font-weight: lighter;
+    font-size: 27px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(244, 170, 73), rgb(228, 5, 5), #833ab4);
+    cursor: pointer;
+    margin-top: 20px;
+    }
+    .name button:hover{
+        background-image: linear-gradient(to right,#9114ff, #da22ff 100%);
+    }
+
+
+
+
+
+
+   @media(max-width:700px){
+              /*Header*/
+    .color a{
+            display: block;
+            position: absolute;
+            top: 10%;
+           font-size: 20px;
+           
+       }
+    
+       .right{
+           display: flex;
+           flex-direction: column;
+           row-gap: 60px;
+           position: relative;
+           top: 10px;
+           right: 35%;
+       }
+                
+       .burger{
+           display: block;
+           top: 17px;
+           right: 15px;
+       }
+
+
+
+            /* Main Section */
+       .main{
+           background: #000000;
+           background: linear-gradient(to right, #161616, #000000);
+           
+           }
+           .section{
+               margin-top: 30px;
+           }
+       .section h1{
+        width: 100%;
+        text-align: center;   
+       }
+       .section p{
+           font-size: 20px;
+           margin: 10px 20px;
+           width: 100%;
+           text-align: center;
+       }
+       .section button{
+           font-size: 20px;
+            padding: 10px 30px;
+       }
+       .about h2{
+           font-size: 30px;
+       }
+       .about h1, h3{
+        font-size: 20px;
+    }
+    .about button{
+        padding: 15px 30px;
+        font-size: 12px;
+    }
+
+    .signup-section{
+        text-align: center;
+    }
+    .signup h2{
+        font-size: 35px;
+    }
+    .name h1{
+        font-size: 45px;
+    }
+    .name button{
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+   }
+   @media(max-width:950px){
+    .sub-service-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .pyq{
+        margin-top: 50px;
+    }
+    .syllabus-pattern{
+        margin-top: 50px;
+        padding: 150px 18px 75px 18px;
+    }
+   }
+   
